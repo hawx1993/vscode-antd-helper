@@ -4,22 +4,41 @@
   "description": "a vscode plugin for antd react and antd vue code helper",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": ">=1.7.0"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vscode-antd-helper.helloWorld"
+    "onCommand:vscode-antd-helper.helloWorld",
+    "onCommand:antd-helper.search"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vscode-antd-helper.helloWorld",
-        "title": "Hello World"
+        "command": "antd-helper.search",
+        "title": "antd-helper.search"
       }
-    ]
+    ],
+    "keybindings": [
+      {
+          "command": "antd-helper.search",
+          "key": "shift+cmd+i",
+          "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "vscode antd helper Configuration",
+      "properties": {
+        "antd-helper.link-url": {
+          "type": "string",
+          "default": "https://ant.design"
+        }
+      }
+
+      
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
