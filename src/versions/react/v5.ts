@@ -1,6 +1,6 @@
-import { ComponentMapping } from '../../componentsMap';
+import { ComponentMapping } from '../../build/componentsMap';
 
-export const antdComponentMapV4: ComponentMapping = {
+export const antdComponentMapV5: ComponentMapping = {
   Affix: {
     anchorBeforeProps: '## API',
     methods: ['target', 'onChange'],
@@ -189,6 +189,18 @@ export const antdComponentMapV4: ComponentMapping = {
     anchorBeforeProps: '## API',
     methods: [],
   },
+  FloatButton: {
+    anchorBeforeProps: '## API',
+    methods: ['onClick'],
+  },
+  'FloatButton.Group': {
+    anchorBeforeProps: '### FloatButton.Group',
+    methods: ['onOpenChange'],
+  },
+  'FloatButton.BackTop': {
+    anchorBeforeProps: '### FloatButton.BackTop',
+    methods: ['onClick', 'target'],
+  },
   Form: {
     anchorBeforeProps: '### Form',
     methods: ['onSubmit'],
@@ -352,6 +364,10 @@ export const antdComponentMapV4: ComponentMapping = {
   Progress: {
     anchorBeforeProps: '## API',
     methods: ['format'],
+  },
+  QRCode: {
+    anchorBeforeProps: '## API',
+    methods: ['onRefresh'],
   },
   Radio: {
     anchorBeforeProps: '## API',
@@ -534,6 +550,14 @@ export const antdComponentMapV4: ComponentMapping = {
   Tooltip: {
     anchorBeforeProps: ['### Common API', '### 共同的 API', '## API'],
     methods: ['title', 'getPopupContainer', 'onVisibleChange'],
+  },
+  Tour: {
+    anchorBeforeProps: '## API',
+    methods: ['onChange', 'onClose', 'onFinish'],
+  },
+  'Tour.TourStep': {
+    anchorBeforeProps: '### TourStep',
+    methods: ['target', 'onClose'],
   },
   Transfer: {
     anchorBeforeProps: '## API',

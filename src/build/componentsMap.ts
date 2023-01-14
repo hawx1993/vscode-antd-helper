@@ -8,5 +8,5 @@ export interface ComponentDocLocation {
   methods: string[];
 }
 
-export { antdComponentMapV4 } from './versions/react/v4';
-export { antdComponentMapV5 } from './versions/react/v5';
+export { antdComponentMapV4 } from '../versions/react/v4';
+export { antdComponentMapV5 } from '../versions/react/v5';
